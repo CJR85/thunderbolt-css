@@ -92,3 +92,22 @@ body {
   border-top: 60px solid var(--clr);
   border-right: 30px solid transparent;
 }
+
+.thunderbolt .shape4 {
+  position: relative;
+  width: 25px;
+  height: 60px;
+  background: var(--clr);
+  transform: skewX(-25deg) translate(-50%, -50%);
+}
+
+.thunderbolt .shape4::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 60px solid var(--clr);
+  border-right: 30px solid transparent;
+}
