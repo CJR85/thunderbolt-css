@@ -19,3 +19,23 @@ body {
 .thunderbolt {
   display: flex;
 }
+
+.thunderbolt .shape1 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 60px solid var(--clr);
+  border-left: 30px solid transparent;
+  transform: skewX(-25deg) translate(-50%, -50%);
+}
+
+.thunderbolt .shape1::before {
+  content: '';
+  position: absolute;
+  bottom: -110px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 60px solid var(--clr);
+  border-right: 30px solid transparent;
+}
